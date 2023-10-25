@@ -13,9 +13,9 @@ The IBM Elasticsearch service does not include a managed Kibana service, but fol
 
 ## Pre-requisites
 
-- You need to have an [IBM Cloud](https://cloud.ibm.com/registration).
+- An [IBM Cloud Account](https://cloud.ibm.com/registration).
 - [Terraform](https://www.terraform.io/) - to deploy infrastructure
-- A pre-existing IBM Cloud Databases for Elasticsearch deployment
+- A pre-existing [IBM Cloud Databases for Elasticsearch deployment](https://cloud.ibm.com/databases/databases-for-elasticsearch/create)
 
 
 
