@@ -38,7 +38,11 @@ git clone https://github.com/IBM/elasticsearch-kibana-codeengine.git
 
 1. Navigate into the `terraform` folder of the cloned project.
 
-1. On your machine, create a document that is named `terraform.tfvars`, with the following fields:
+```sh
+cd elasticsearch-kibana-codeengine/terraform
+```
+
+2. On your machine, create a document that is named `terraform.tfvars`, with the following fields:
 
    ```sh
 
@@ -53,7 +57,7 @@ git clone https://github.com/IBM/elasticsearch-kibana-codeengine.git
 
    The `terraform.tfvars` document contains variables that you might want to keep secret so it is ignored by the GitHub repository.
 
-1. Install the infrastructure with the following command:
+3. Install the infrastructure with the following command:
 
    ```sh
    terraform init 
@@ -65,3 +69,11 @@ git clone https://github.com/IBM/elasticsearch-kibana-codeengine.git
 The previous step will produce a URL, which is the public URL of your Kibana deployment. It will look something like: `https://kibana-app.1834dcfgrtygbg.eu-gb.codeengine.appdomain.cloud`. 
 
 If you visit that URL in your web browser you should see the Kiban login screen where you can log in with your credentials and have access to your Elasticsearch deployment!
+
+--------------------
+
+If at any time you wish to tear down your Kibana application and project from IBM Code Engine, simply run
+
+```sh
+terraform destroy
+```
