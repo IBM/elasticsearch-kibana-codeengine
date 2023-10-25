@@ -57,6 +57,8 @@ cd elasticsearch-kibana-codeengine/terraform
 
    The `terraform.tfvars` document contains variables that you might want to keep secret so it is ignored by the GitHub repository.
 
+> Note that Kibana runs with `ELASTICSEARCH_SSL_VERIFICATIONMODE` set to `none`, so although the traffic between Kibana and Elasticsearch is encrypted, the Elasticsearch service is not verified against the CA certificate provided by IBM Databases for Elasticsearch credentials.
+
 3. Install the infrastructure with the following command:
 
    ```sh
