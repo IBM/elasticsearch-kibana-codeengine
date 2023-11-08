@@ -8,6 +8,8 @@ resource "ibm_code_engine_app" "kibana_app" {
   name            = "kibana-app"
   image_reference = "docker.elastic.co/kibana/kibana:${var.es_version}"
   image_port = 5601
+  scale_min_instances = 1
+  scale_max_instances = 1
 
   run_env_variables {
     type  = "literal"
